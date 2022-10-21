@@ -1,0 +1,53 @@
+.hero {
+  padding-block-start: 2rem;
+  @media (--md-n-above) {
+    padding-block-start: 12vh;
+  }
+
+  .title {
+    span {
+      text-transform: capitalize;
+      margin-inline-start: 1.5rem;
+    }
+  }
+
+  &__img {
+    position: relative;
+    max-width: 325px;
+    margin-inline: auto;
+    margin-block-start: 3rem;
+    @media (--md-n-above) {
+      display: none;
+    }
+
+    .buy-btn {
+      position: absolute;
+      left: 20%;
+      top: 4%;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    @media (--md-n-above) {
+      display: block;
+      margin-block-start: 3.75rem;
+    }
+
+    svg {
+      margin-inline: auto;
+    }
+  }
+}
+
+.buy-btn {
+  width: 60px;
+  height: 60px;
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}

@@ -1,0 +1,226 @@
+.features {
+  position: relative;
+  display: grid;
+  align-content: end;
+  width: 100vw;
+  height: 100vh;
+  // background-color: var(--bg-clr);
+  // background-image: var(--bg-img);
+  // height: 300vh;
+  padding-block-end: 5vh;
+  @media (--md-n-above) {
+    align-content: center;
+    padding-block-end: 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 1.5rem;
+
+    @media (--md-n-above) {
+      gap: 0;
+      grid-template-columns: 1fr 30vw 1fr;
+    }
+  }
+
+  &__benefits {
+    @media (--md-n-above) {
+      grid-column: 3 / -1;
+      justify-self: center;
+    }
+  }
+
+  .imgs__wrapper {
+    img {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      z-index: -1;
+
+      width: var(--w);
+      height: var(--h, auto);
+
+      @media (--md-n-above) {
+        &:nth-child(1) {
+          filter: blur(4px);
+        }
+        &:nth-child(2) {
+          filter: blur(1px);
+        }
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+
+    &.top {
+      [data-elderberry] {
+        &:nth-child(1) {
+          --w: 40vw;
+          top: 0;
+        }
+        &:nth-child(2) {
+          --w: 60vw;
+          top: 0;
+          left: 50vw;
+        }
+        &:nth-child(3) {
+          --w: 35vw;
+        }
+        @media (--md-n-above) {
+          &:nth-child(1) {
+            --w: 20vw;
+            left: 10vw;
+            top: -5vh;
+          }
+          &:nth-child(2) {
+            --w: 27vw;
+            top: -20vh;
+            left: 60vw;
+          }
+        }
+      }
+      [data-orange] {
+        &:nth-child(1) {
+          --w: 42vw;
+          top: -5vw;
+        }
+        &:nth-child(2) {
+          --w: 76vw;
+          top: -5vh;
+          left: 40vw;
+        }
+        &:nth-child(3) {
+          --w: 42vw;
+          top: 10vh;
+        }
+        @media (--md-n-above) {
+          &:nth-child(1) {
+            --w: 22vw;
+            left: 10vw;
+            top: -10vh;
+          }
+          &:nth-child(2) {
+            --w: 30vw;
+            top: -25vh;
+            left: 60vw;
+          }
+        }
+      }
+      [data-zinc] {
+        &:nth-child(1) {
+          --w: 42vw;
+          left: -5vw;
+          top: -5vh;
+        }
+        &:nth-child(2) {
+          --w: 85vw;
+          left: 0;
+          left: 30vw;
+          top: -5vh;
+        }
+        &:nth-child(3) {
+          --w: 42vw;
+          top: 15vh;
+        }
+        @media (--md-n-above) {
+          &:nth-child(1) {
+            --w: 25vw;
+            left: 5vw;
+            top: -15vh;
+          }
+          &:nth-child(2) {
+            --w: 40vw;
+            top: -30vh;
+            left: 60vw;
+          }
+        }
+      }
+    }
+
+    &.bottom {
+      @media (--md-n-below) {
+        display: none;
+      }
+
+      [data-elderberry] {
+        @media (--md-n-above) {
+          &:nth-child(1) {
+            --w: 22vw;
+            left: 10vw;
+            top: 75vh;
+          }
+          &:nth-child(2) {
+            --w: 23vw;
+            top: 70vh;
+            left: 70vw;
+          }
+        }
+      }
+      [data-orange] {
+        @media (--md-n-above) {
+          &:nth-child(1) {
+            --w: 18vw;
+            left: 10vw;
+            top: 75vh;
+          }
+          &:nth-child(2) {
+            --w: 29vw;
+            top: 70vh;
+            left: 60vw;
+          }
+        }
+      }
+      [data-zinc] {
+        @media (--md-n-above) {
+          &:nth-child(1) {
+            --w: 20vw;
+            left: 5vw;
+            top: 70vh;
+          }
+          &:nth-child(2) {
+            --w: 30vw;
+            left: 60vw;
+            top: 60vh;
+          }
+        }
+      }
+    }
+  }
+
+  h3,
+  h6 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    // font-size: 2.5rem;
+    // font-size: clamp(
+    //   2.5rem,
+    //   2.2532894736842106rem + 0.9868421052631579vw,
+    //   3.4375rem
+    // );
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  }
+  h6 {
+    margin-block: 1rem;
+  }
+  h5 {
+    padding-block-end: 0.5rem;
+    border-bottom: 1px solid currentColor;
+  }
+  small {
+    font-size: 0.903vw;
+    font-size: max(12px, 0.903vw);
+  }
+
+  ol {
+    width: fit-content;
+
+    li:not(:last-child) {
+      margin-block-end: 0.5rem;
+    }
+  }
+}

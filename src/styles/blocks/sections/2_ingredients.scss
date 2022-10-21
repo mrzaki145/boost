@@ -1,0 +1,10 @@
+.ingredients {
+  padding-block: 8rem 4rem;
+  @media (--lg-n-above) {
+    padding-block: 18rem 8rem;
+  }
+
+  .title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,160 @@
+html {
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.8092105263157895rem + 0.2631578947368421vw,
+    1.125rem
+  );
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: var(--ff-secondary);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  transition: color var(--anim-dur) var(--anim-easing);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1,
+.title {
+  font-size: 3.625rem;
+  font-size: clamp(
+    3.625rem,
+    0.9605263157894739rem + 10.657894736842104vw,
+    13.75rem
+  );
+  font-family: var(--ff-primary);
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "kern" 0;
+}
+
+h2 {
+  font-size: 2.8125rem;
+  font-size: clamp(2.8125rem, 2.236842105263158rem + 2.302631578947368vw, 5rem);
+  font-weight: 500;
+  font-family: var(--ff-tertiary);
+  letter-spacing: -0.0608em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-size: clamp(
+    2.25rem,
+    1.8214285714285714rem + 2.142857142857143vw,
+    3.75rem
+  );
+  font-family: var(--ff-primary);
+  letter-spacing: -0.03em;
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-size: clamp(
+    1.75rem,
+    1.4821428571428572rem + 0.5357142857142857vw,
+    2.125rem
+  );
+  font-family: var(--ff-tertiary);
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-size: clamp(
+    1.125rem,
+    1.0921052631578947rem + 0.13157894736842105vw,
+    1.25rem
+  );
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-size: clamp(
+    0.875rem,
+    0.8421052631578947rem + 0.13157894736842105vw,
+    1rem
+  );
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+}
+
+p,
+.btn {
+  font-size: inherit;
+
+  &.lg {
+    font-size: 1.125rem;
+    font-size: clamp(
+      1.125rem,
+      1.0892857142857142rem + 0.17857142857142858vw,
+      1.25rem
+    );
+  }
+}
+
+// -----------------
+
+.title {
+  text-transform: uppercase;
+  line-height: 0.8;
+  letter-spacing: -0.0608em;
+  font-weight: 700;
+  font-kerning: none;
+
+  &.lg {
+    font-size: 3.625rem;
+    font-size: clamp(3.625rem, 1.125rem + 10vw, 13.125rem);
+  }
+
+  div {
+    vertical-align: top;
+    font-size: inherit;
+  }
+
+  span {
+    text-align: start;
+    letter-spacing: -1px;
+    line-height: 1.15;
+    font-size: 0.875rem;
+    font-size: clamp(
+      0.875rem,
+      0.6964285714285714rem + 0.8928571428571428vw,
+      1.5rem
+    );
+    font-weight: 400;
+    font-family: var(--ff-secondary);
+  }
+
+  em {
+    font-style: normal;
+  }
+}
+
+// btns
+
+.btn {
+  line-height: 1;
+  font-family: var(--ff-tertiary);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}

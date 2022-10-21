@@ -1,0 +1,74 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  outline: none;
+  color: inherit;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  width: auto;
+  min-height: 2.5rem;
+  min-height: clamp(2.5rem, 2.3684210526315788rem + 0.5263157894736842vw, 3rem);
+  padding-inline: 1.5rem;
+  border-radius: 100vmax;
+  border: var(--brdr-size) solid var(--brdr-clr);
+
+  will-change: color, background-color;
+  transition: 0.25s ease;
+  transition-property: color, background-color;
+
+  &.lg {
+    padding-inline: 3rem;
+    min-height: 3rem;
+    min-height: clamp(
+      3rem,
+      2.9285714285714284rem + 0.35714285714285715vw,
+      3.25rem
+    );
+  }
+
+  &:hover {
+    color: var(--clr-yellow);
+    background-color: var(--clr-white);
+  }
+}
+
+.buy-btn {
+  position: absolute;
+  top: 7vw;
+  right: 9vw;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  border: 2px solid var(--clr-black);
+  border-radius: 100vmax;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.35;
+  font-weight: 600;
+  font-size: 1.125rem;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 5);
+  animation: pulse 2s infinite;
+  pointer-events: all;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.25);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: GT Flexa Ext;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/GT-Flexa-Bold.9140c64a04d296267066a4f7c529b230.eot")
+      format("embedded-opentype"),
+    url("/assets/fonts/GTFlexa-ExtendedBold.ttf") format("truetype"),
+    url("/assets/fonts/GTFlexa-ExtendedBold.woff") format("woff"),
+    url("/assets/fonts/GT-Flexa-Bold.9140c64a04d296267066a4f7c529b230.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/GT-Flexa-Bold.974f06ca1aaf1d74b97682d7865396f2.woff2")
+      format("woff2");
+}
+@font-face {
+  font-family: GT Flexa Medium;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/GTFlexa-Medium.ttf") format("truetype"),
+    url("/assets/fonts/GTFlexa-Medium.woff") format("woff"),
+    url("/assets/fonts/GT-Flexa-Medium.84e413a019c49443a2c4541593fe6803.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/GT-Flexa-Medium.14768e1f8c4e4bf1ad47ca2398e28bed.woff2")
+      format("woff2");
+}
+@font-face {
+  font-family: Peak Rounded;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/assets/fonts/PeakRounded-Regular.eot");
+  src: url("/assets/fonts/PeakRounded-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/PeakRounded-Regular.ttf") format("truetype"),
+    url("/assets/fonts/PeakRounded-Regular.woff") format("woff"),
+    url("/assets/fonts/PeakRounded-Regular.woff2") format("woff2");
+}

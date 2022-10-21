@@ -1,0 +1,14 @@
+.title {
+  display: inline-block;
+  margin-inline-start: -0.972vw;
+  // outline: 1px solid red;
+
+  .word {
+    transform-origin: top left;
+  }
+
+  div {
+    display: inline-flex !important;
+    align-items: center;
+  }
+}
